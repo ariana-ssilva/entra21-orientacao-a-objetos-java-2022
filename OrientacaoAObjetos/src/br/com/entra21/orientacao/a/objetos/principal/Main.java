@@ -6,6 +6,9 @@ import br.com.entra21.orientacao.a.objetos.principal.aula01.classes.Aluno;
 import br.com.entra21.orientacao.a.objetos.principal.aula01.classes.Professor;
 import br.com.entra21.orientacao.a.objetos.principal.aula02.heranca.Diretor;
 import br.com.entra21.orientacao.a.objetos.principal.aula02.heranca.Funcionario;
+import br.com.entra21.orientacao.a.objetos.principal.aula03.polimorfismo.Atleta;
+import br.com.entra21.orientacao.a.objetos.principal.aula03.polimorfismo.Nadador;
+import br.com.entra21.orientacao.a.objetos.principal.aula03.polimorfismo.Velocista;
 
 
 public class Main {
@@ -25,6 +28,7 @@ public class Main {
 			System.out.println("0 - Sair");
 			System.out.println("1 - Classes e objetos");
 			System.out.println("2 - Herança");
+			System.out.println("3 - Polimorfismo");
 			opcao = entrada.nextByte();
 
 			switch (opcao) {
@@ -34,8 +38,13 @@ public class Main {
 			case 1:
 				aprenderClasses();
 				break;
+				
 			case 2:
 				aprenderHeranca();
+				break;
+				
+			case 3:
+				aprenderPolimorifsmo();
 				break;
 
 			default:
@@ -47,24 +56,6 @@ public class Main {
 	}
 
 	private static void aprenderClasses() {
-		Funcionario funcionario1 = new Funcionario();		
-		funcionario1.setIdade((byte)22);
-		funcionario1.setNome("Ariana");
-		funcionario1.setCargoAtual("Analista de suporte");
-		funcionario1.setSalario(1500.00f);
-		
-		System.out.println("Oi meu nome e: " + funcionario1.getNome() + "e tenho " + funcionario1.getIdade() + "anos.");
-		
-		Funcionario funcionario2 = new Funcionario("Steven Rogers", (byte)84, "Primeiro Vingador", 18555.33f);
-		
-		Diretor diretor1 = new Diretor();
-		diretor1.realizarApresentacao();
-		
-		Diretor diretor2 = new Diretor();
-		diretor2.realizarApresentacao();
-		
-		Diretor diretor3 = new Diretor("Paulo", (byte) 30);
-		diretor3.realizarApresentacao();
 		// instanciando um objeto da classe Professor na variavel professorJava
 		Professor professorJava = new Professor();
 
@@ -121,6 +112,44 @@ public class Main {
 
 	private static void aprenderHeranca() {
 		 //aprender herança
+		Funcionario funcionario1 = new Funcionario();		
+		funcionario1.setIdade((byte)22);
+		//funcionario1.setNome("Ariana");
+		funcionario1.setCargoAtual("Analista de suporte");
+		funcionario1.setSalario(1500.00f);
+		
+		//System.out.println("Oi meu nome e: " + funcionario1.getNome() + "e tenho " + funcionario1.getIdade() + "anos.");
+		
+		//Funcionario funcionario2 = new Funcionario("Steven Rogers", (byte)84, "Primeiro Vingador", 18555.33f);
+		
+		Diretor diretor1 = new Diretor();
+		diretor1.realizarApresentacao();
+		
+		Diretor diretor2 = new Diretor();
+		diretor2.realizarApresentacao();
+		
+		Diretor diretor3 = new Diretor("Paulo", (byte) 30);
+		diretor3.realizarApresentacao();
 
 	}
+
+	private static void aprenderPolimorifsmo() {
+		Atleta cr7 = new Atleta();
+		cr7.setName("Cristianinho");
+		cr7.comemorarVitoria();
+		cr7.aprenderComDerrota();
+		
+		Nadador aquaman = new Nadador("Arthur Joseph Curry", (byte)25, 15, 15, "Mar", "Tridente");
+		aquaman.comemorarVitoria("");
+		aquaman.aprenderComDerrota();
+		aquaman.setName("Arthur Joseph Curry");
+		
+		Velocista flash = new Velocista();
+		flash.setMarcaCalcado("Converse");  
+		flash.setName("Barry Allen");
+		flash.comemorarVitoria();
+		flash.aprenderComDerrota();
+	}
+	
+	
 }
