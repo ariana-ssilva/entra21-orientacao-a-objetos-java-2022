@@ -19,6 +19,7 @@ import br.com.entra21.orientacao.a.objetos.principal.aula04.interfaces.Gato;
 import br.com.entra21.orientacao.a.objetos.principal.aula04.interfaces.Hero;
 import br.com.entra21.orientacao.a.objetos.principal.aula04.interfaces.Humano;
 import br.com.entra21.orientacao.a.objetos.principal.aula04.interfaces.Planta;
+import br.com.entra21.orientacao.a.objetos.principal.aula05.revisao.Revisao;
 
 
 public class Main {
@@ -41,6 +42,7 @@ public class Main {
 			System.out.println("3 - Polimorfismo");
 			System.out.println("4 - Aprender conceitos POO");
 			System.out.println("5 - Aprender polimorfismo com interface");
+			System.out.println("6 - Revisar POO");
 			opcao = entrada.nextByte();
 
 			switch (opcao) {
@@ -66,7 +68,8 @@ public class Main {
 			case 5:
 				aprenderPolimorfismoInterface();
 				break;	
-
+			case 6: 
+				revisarPOO();
 			default:
 				System.out.println("C'monnnnnnnn :(");
 				break;
@@ -224,4 +227,8 @@ public class Main {
 		comercial.acelerar();
 	}
 	
+	private static void revisarPOO() {
+		Revisao.revisar();
+	}
+
 }
