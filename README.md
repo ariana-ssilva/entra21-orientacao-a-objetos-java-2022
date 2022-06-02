@@ -2,7 +2,7 @@
 
 <center>
 
-## ↪️ Object Orient Programming ↩️
+## ↪️ Object Oriented Programming ↩️
 
 <br>
 
