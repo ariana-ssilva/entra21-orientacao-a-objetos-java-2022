@@ -1,2 +1,26 @@
-# entra21-orientacao-objetos-java-2022-
-Repositório do curso Entra21 - dedicado para orientação à objetos
+# Entra21 - Full stack Java Course ☕
+
+<center>
+
+## ↪️ Object Orient Programming ↩️
+
+<br>
+
+![Full stack Java course](OrientacaoAObjetos/gif_img/OOP.png)
+
+</center>
+
+## Practical Content ✍🏻
+
+
+- [x] UML Class Diagram;
+- [x] Object;
+- [x] Class;
+- [x] Inheritance
+- [x] Polimorphism;
+- [x] Encapsulation;
+- [x] OOP Concepts (Coupling);
+- [x] OOP Concepts (Cohesion);
+- [x] OOP Concepts (Association);
+- [x] OOP Concepts (Aggregation);
+- [x] OOP Concepts (Composition);
